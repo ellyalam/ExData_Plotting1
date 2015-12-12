@@ -5,5 +5,5 @@
   rhpc$DateTime<-as.POSIXct(paste(rhpc$Date,rhpc$Time), format="%d/%m/%Y %H:%M:%S")#adding a column that contains a date type value in the date+time format
   dt<-rhpc$DateTime
   plot(dt,gap,xlab="",ylab="Global Active Power (kilowatts)",type='l')
-  dev.copy(png,file="plot2.png")
-  dev.off()
+  dev.copy(png,file="plot2.png") #saving plot to a png file
+  dev.off() #closing png file
